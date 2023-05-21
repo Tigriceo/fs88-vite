@@ -1,0 +1,32 @@
+.test {
+    background-color: red;
+}
+
+.test__block {
+    color: white;
+}
+
+.test__block::after {}
+
+
+.test {
+    background-color: red;
+
+    &__block {
+        color: white;
+    }
+
+    &::after {}
+
+    @media (max-width: 1024px) {
+
+        color: red;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .test {
+        color: red;
+    }
+}
